@@ -1,0 +1,20 @@
+#this file is usesd to pass parameter to the solver
+#the solver will ignore the remaining things after '#' in each line
+3e9   #frequency
+1    #number of element type (in-out materials combination)
+1 1 0 0  #outer material (1)relative permittivity, (2) relative permeability, (3) conductivity , (4) loss tangent
+1 1 0 0  #inner material (1)relative permittivity, (2) relative permeability, (3) conductivity , (4) loss tangent (now the code assuming PEC)
+2  #the number of source (For efficiency, better to combine the source at the same location)
+1 0 90 0 1  # (1) source magnitude, (2) souce phase (3) source polarization theta, (4)source polarization phi, (5) source type, 1 represents M dipole
+0 0 0.001    #source location x, y, z
+1 0 90 90 1   # (1) source magnitude, (2) souce phase (3) source polarization theta, (4)source polarization phi, (5) source type, 1 represents M dipole
+0 0 0.001    #source location x, y, z
+51  # number of receiver points in one direction if stat and end points are different
+-0.075 -0.075 0.015   #receiver start point coordinates x, y, z
+0.075 0.075 0.015   #receiver end point coordinates x, y, z
+#below are some performance parameter:
+3 3 #inner and outer Gaussian quadrature degree
+3.0 #threshold (in terms of the number of edge length) that will extract the near singularity
+6  #the allowed parallel threads
+#below is the mesh file name:
+two_plate_v1.elx

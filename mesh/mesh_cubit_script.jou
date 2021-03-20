@@ -1,0 +1,17 @@
+reset
+set default element tri  
+
+create surface rectangle width 0.2 zplane 
+move Surface 1  location 0 0 0.016 include_merged 
+create surface rectangle width 0.1 zplane 
+
+block 1 surface all
+Block all Attribute Count 1
+Block all Attribute Index 1  1 
+
+surface 1 size 0.005
+surface 2 size 0.0025
+mesh surface all
+
+cd 'I:\SIE\PEC_SIE\mesh'
+export genesis "two_plate_v3.g" block all  overwrite
