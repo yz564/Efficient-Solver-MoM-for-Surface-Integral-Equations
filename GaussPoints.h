@@ -35,6 +35,9 @@ vector<T> LookUpGaussWeights(int degree) {
 			0.0533472356088385,0.0771137608902570,0.0771137608902570,0.0771137608902570,0.0771137608902570,0.0771137608902570,0.0771137608902570 };
 		return ans;
 	}
+	default: 
+		vector<T>  ans{ 1 };
+		return ans;
 	}
 }
 
@@ -119,5 +122,12 @@ vector<vector<T> > LookUpGaussPoints(const vector<vector<T> >& r, int degree) {
 		}
 		return ans;
 	}
+	default:
+		T a[] = { 0.3333333333333333 };
+		T b[] = { 0.3333333333333333 };
+		T c[] = { 0.3333333333333333 };
+		vector<vector<T> > ans(1);
+		ans[0] = (myVecPlus(myVecPlus(myVecNumProd(r[0], a[0]), myVecNumProd(r[1], b[0])), myVecNumProd(r[2], c[0])));
+		return ans;
 	}
 }

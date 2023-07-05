@@ -10,8 +10,8 @@
 #include <complex>
 #include "cpp_plus_v1.h"
 #include <cstdlib>
-#include <Eigen/Dense>
-#include <Eigen/Sparse>
+#include <eigen3/Eigen/Dense>
+#include <eigen3/Eigen/Sparse>
 #include <float.h>
 #include <fstream>
 #include <iostream>
@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <string>
 #include <time.h>
-#include <unsupported/Eigen/IterativeSolvers>
+#include <eigen3/unsupported/Eigen/IterativeSolvers>
 
 using namespace std;
 using namespace Eigen;

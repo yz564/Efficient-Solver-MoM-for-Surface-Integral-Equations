@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <ctime>
 #include <omp.h>
-#include <ppl.h>
+//#include <ppl.h>
 #include <array>
 #include <sstream>
 #include <iostream>
@@ -18,7 +18,7 @@
 #include <cstring>
 #include "write_bmm_ver01.h"
 using namespace std;
-using namespace concurrency;
+//using namespace concurrency;
 
 
 template<typename Derived>

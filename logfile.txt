@@ -1,11 +1,11 @@
 ==================start==================
-Load the mesh takes 0.002 seconds
-Processing mesh takes 0.032 seconds
+Load the mesh takes 0.006674 seconds
+Processing mesh takes 0.628764 seconds
 the number of elements is 1156
 the number of edges is 1674
 the average edge length is 0.010014
-Impedance matrix calculation takes 7.128 seconds
-Excitation vector calculation takes 0.007 seconds
-Solving the fully dense system takes 0.903 seconds
-Calculating E and H near fields takes 14.098 seconds
-Total time: 22.172 seconds
+Impedance matrix calculation takes 553.719 seconds
+Excitation vector calculation takes 0.366955 seconds
+Solving the fully dense system takes 270.035 seconds
+Calculating E and H near fields takes 1058.79 seconds
+Total time: 1883.55 seconds

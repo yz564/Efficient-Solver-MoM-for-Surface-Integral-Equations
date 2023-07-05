@@ -15,6 +15,6 @@
 #below are some performance parameter:
 3 3 #inner and outer Gaussian quadrature degree
 3.0 #threshold (in terms of the number of edge length) that will extract the near singularity
-6  #the allowed parallel threads
+2  #the allowed parallel threads
 #below is the mesh file name:
 two_plate_v1.elx

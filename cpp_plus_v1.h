@@ -414,7 +414,7 @@ int get_supremum_ind_by_dichotomy(T *x, int n, T elem)
 	while (right_ind - left_ind > 1)
 	{
 		middle_ind = (left_ind + right_ind) / 2;
-		if (T[middle_ind] >= elem)
+		if (T(middle_ind) >= elem)
 		{
 			right_ind = middle_ind;
 		}
